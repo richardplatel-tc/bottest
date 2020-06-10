@@ -1,0 +1,109 @@
+{
+	"type": "modal",
+	"submit": {
+		"type": "plain_text",
+		"text": "Submit",
+		"emoji": true
+	},
+	"close": {
+		"type": "plain_text",
+		"text": "Cancel",
+		"emoji": true
+	},
+	"title": {
+		"type": "plain_text",
+		"text": "Request Coverage",
+		"emoji": true
+	},
+	"blocks": [
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "When do you want to request on-call coverage for?"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "input",
+            "block_id" : "start_date",
+            "label" : {
+				"type": "plain_text",
+				"text": "Start Date"
+			},
+			"element": {
+                "action_id" : "start_date",
+				"type": "datepicker",
+				"initial_date": "1990-04-28",
+                "_initial_date_today" : true,
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select a date",
+					"emoji": true
+				}
+			}
+		},
+		{
+			"type": "input",
+            "block_id" : "start_time",
+			"label": {
+				"type": "plain_text",
+				"text": "Start Time"
+			},
+			"element": {
+                "action_id" : "start_time",
+				"type": "static_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select an item",
+					"emoji": true
+				},
+                "_add_time_picker" : true,
+				"options": []
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "input",
+            "block_id" : "end_date",
+			"label": {
+				"type": "plain_text",
+				"text": "End Date"
+			},
+			"element": {
+                "action_id" : "end_date",
+				"type": "datepicker",
+				"initial_date": "1990-04-28",
+                "_initial_date_today" : true,
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select a date",
+					"emoji": true
+				}
+			}
+		},
+		{
+			"type": "input",
+            "block_id" : "end_time",
+			"label": {
+				"type": "plain_text",
+				"text": "End Time"
+			},
+			"element": {
+                "action_id" : "end_time",
+				"type": "static_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select an item",
+					"emoji": true
+				},
+                "_add_time_picker" : true,
+				"options": []
+			}
+		}
+	]
+}
