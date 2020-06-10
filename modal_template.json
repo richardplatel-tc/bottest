@@ -1,109 +1,109 @@
 {
-	"type": "modal",
-	"submit": {
-		"type": "plain_text",
-		"text": "Submit",
-		"emoji": true
-	},
-	"close": {
-		"type": "plain_text",
-		"text": "Cancel",
-		"emoji": true
-	},
-	"title": {
-		"type": "plain_text",
-		"text": "Request Coverage",
-		"emoji": true
-	},
-	"blocks": [
-		{
-			"type": "section",
-			"text": {
-				"type": "mrkdwn",
-				"text": "When do you want to request on-call coverage for?"
-			}
-		},
-		{
-			"type": "divider"
-		},
-		{
-			"type": "input",
-            "block_id" : "start_date",
-            "label" : {
-				"type": "plain_text",
-				"text": "Start Date"
-			},
-			"element": {
-                "action_id" : "start_date",
-				"type": "datepicker",
-				"initial_date": "1990-04-28",
-                "_initial_date_today" : true,
-				"placeholder": {
-					"type": "plain_text",
-					"text": "Select a date",
-					"emoji": true
-				}
-			}
-		},
-		{
-			"type": "input",
-            "block_id" : "start_time",
-			"label": {
-				"type": "plain_text",
-				"text": "Start Time"
-			},
-			"element": {
-                "action_id" : "start_time",
-				"type": "static_select",
-				"placeholder": {
-					"type": "plain_text",
-					"text": "Select an item",
-					"emoji": true
-				},
-                "_add_time_picker" : true,
-				"options": []
-			}
-		},
-		{
-			"type": "divider"
-		},
-		{
-			"type": "input",
-            "block_id" : "end_date",
-			"label": {
-				"type": "plain_text",
-				"text": "End Date"
-			},
-			"element": {
-                "action_id" : "end_date",
-				"type": "datepicker",
-				"initial_date": "1990-04-28",
-                "_initial_date_today" : true,
-				"placeholder": {
-					"type": "plain_text",
-					"text": "Select a date",
-					"emoji": true
-				}
-			}
-		},
-		{
-			"type": "input",
-            "block_id" : "end_time",
-			"label": {
-				"type": "plain_text",
-				"text": "End Time"
-			},
-			"element": {
-                "action_id" : "end_time",
-				"type": "static_select",
-				"placeholder": {
-					"type": "plain_text",
-					"text": "Select an item",
-					"emoji": true
-				},
-                "_add_time_picker" : true,
-				"options": []
-			}
-		}
-	]
+   "title" : {
+      "type" : "plain_text",
+      "emoji" : true,
+      "text" : "Request Coverage"
+   },
+   "blocks" : [
+      {
+         "type" : "section",
+         "text" : {
+            "text" : "When do you want to request on-call coverage for?",
+            "type" : "mrkdwn"
+         }
+      },
+      {
+         "type" : "divider"
+      },
+      {
+         "block_id" : "start_date",
+         "element" : {
+            "action_id" : "start_date",
+            "placeholder" : {
+               "text" : "Select a date",
+               "emoji" : true,
+               "type" : "plain_text"
+            },
+            "type" : "datepicker",
+            "_initial_date_today" : true,
+            "initial_date" : "1990-04-28"
+         },
+         "label" : {
+            "type" : "plain_text",
+            "text" : "Start Date"
+         },
+         "type" : "input"
+      },
+      {
+         "type" : "input",
+         "element" : {
+            "options" : [],
+            "_add_time_picker" : true,
+            "type" : "static_select",
+            "placeholder" : {
+               "text" : "Select an item",
+               "type" : "plain_text",
+               "emoji" : true
+            },
+            "action_id" : "start_time"
+         },
+         "label" : {
+            "text" : "Start Time",
+            "type" : "plain_text"
+         },
+         "block_id" : "start_time"
+      },
+      {
+         "type" : "divider"
+      },
+      {
+         "block_id" : "end_date",
+         "type" : "input",
+         "element" : {
+            "action_id" : "end_date",
+            "initial_date" : "1990-04-28",
+            "placeholder" : {
+               "text" : "Select a date",
+               "emoji" : true,
+               "type" : "plain_text"
+            },
+            "_initial_date_today" : true,
+            "type" : "datepicker"
+         },
+         "label" : {
+            "type" : "plain_text",
+            "text" : "End Date"
+         }
+      },
+      {
+         "type" : "input",
+         "element" : {
+            "action_id" : "end_time",
+            "type" : "static_select",
+            "_add_time_picker" : true,
+            "placeholder" : {
+               "text" : "Select an item",
+               "emoji" : true,
+               "type" : "plain_text"
+            },
+            "options" : []
+         },
+         "label" : {
+            "type" : "plain_text",
+            "text" : "End Time"
+         },
+         "block_id" : "end_time"
+      }
+   ],
+   "type" : "modal",
+   "close" : {
+      "type" : "plain_text",
+      "emoji" : true,
+      "text" : "Cancel"
+   },
+   "submit" : {
+      "type" : "plain_text",
+      "emoji" : true,
+      "text" : "Submit"
+   }
 }
