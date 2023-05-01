@@ -1,6 +1,6 @@
 pip>=20.1.1
 python-dotenv==0.13.0
-Flask==1.1.2
+Flask==2.3.2
 slackeventsapi==2.1.0
 slackclient==2.7.1
 
